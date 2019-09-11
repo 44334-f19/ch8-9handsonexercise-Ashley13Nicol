@@ -1,13 +1,86 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Williams Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
-		
-		</style>
+		 table {margin: auto;
+                    border: 5px solid #000;
+                border-spacing: 0px;
+                width: 75%;
+                background-color:#CCFFFF;}
+                td, th{padding: 0.5 em;}
+            caption {font-size: 1.2em;
+                    font-style: oblique;}
+	       th {text-align: left;}	
+    </style>   
 	</head> 
 <body> 
-
+    <h1>My Favorite Movie </h1>
+    <table>
+        <caption>Avengers</caption>
+    <thead>
+        <tr>
+            <th id= "Q">Common Questions</th>
+            <th id= "I">Information</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+                <td id= "Q">Who was the main director?</td>
+                <td id= "I">Joss Whedon</td>
+        <tr/>
+         <tr>
+                <td id= "Q">Who was the leading actor? </td>
+                <td id= "I">Robert Downey Jr., Tom Hiddleson, and Mark Ruffalo</td>
+        <tr/>
+         <tr>
+                <td id= "Q">Who was the leading actress? </td>
+                <td id= "I">Scarlet Johanson</td>
+        <tr/>
+         <tr>
+                <td id= "Q">What is the movie rated?</td>
+                <td id= "I">PG-13</td>
+        <tr/>
+         <tr>
+                <td id= "Q">What is brief description of the movie?</td>
+                <td id= "I">Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.</td>
+        <tr/>
+         <tr>
+                <td id= "Q">Where can I find reviews about this movie?</td>
+                <td id= "I"><a href="https://www.rottentomatoes.com/m/avengers_infinity_war">Rotten Tomatoes</a></td>
+        <tr/>
+    </tbody>
+    </table>
+<h1>Music Survay</h1>
+     <form method="post" action = "http://webdevbasics.net/scripts/demo.php">
+        <div id= "wrapper">
+            <fieldset id= "stuPers">
+             <label for ="myname">*Name:</label>
+            <input type = "text" name = "myname" id= "myName" required= "required" placeholder= "your first and last name">
+             <label for ="myEmail">*Email:</label>
+            <input type = "text" name = "myEmail" id= "myEmal" required= "required" placeholder= "your email">
+            </fieldset>
+            
+             <fieldset id= "stuInFoCol1">
+             <label for="favsongs">List your top favorite songs</label><br>
+            <textarea name="favsongs" id="favsongs" rows="3" cols="60" required= "required"></textarea><br>
+                Select which genrea of music you prefer<br>
+                 <input type="radio" name="rap" value="rap"> Rap<br>
+                 <input type="radio" name="country" value="country"> Country<br>
+                 <input type="radio" name="other" value="other"> Other
+            </fieldset>  
+            
+             <fieldset id= "stuRating">
+                  Select which artist you would most likey listen to <br> 
+            <input type = "checkbox" name="artist" id="lg" value="lg">Lady GAGA<br>
+            <input type = "checkbox" name="artist" id="awol" value="awol">Awol Nation<br>
+            <input type = "checkbox" name="artist" id="mac" value="mac">Mac Miller<br> 
+                 <p>Thank you </p>
+                 
+            
+            </fieldset>
+        </div>
+    </form>
 </body> 
 </html> 
